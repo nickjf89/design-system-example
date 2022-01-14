@@ -8,6 +8,6 @@
 import Foundation
 import UIKit
 
-extension UIColor {
-  static let brandColor: UIColor = .systemGreen
+public extension UIColor {
+  static let trustpilotBrandColor: UIColor = .systemGreen
 }
