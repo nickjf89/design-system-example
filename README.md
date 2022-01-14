@@ -1,1 +1,3 @@
-# design-system-example
+# design-system
+
+A description of this package.
