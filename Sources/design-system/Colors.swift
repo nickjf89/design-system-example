@@ -9,5 +9,5 @@ import Foundation
 import UIKit
 
 public extension UIColor {
-  static let trustpilotBrandColor: UIColor = .systemGreen
+  static let trustpilotBrandColor: UIColor = .systemBlue
 }
