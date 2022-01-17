@@ -27,6 +27,6 @@ private extension DesignSystem {
           let alpha = components.alpha
     else { return nil }
 
-    return UIColor(red: red, green: green, blue: blue, alpha: alpha)
+    return UIColor(red: red/255, green: green/255, blue: blue/255, alpha: alpha)
   }
 }
