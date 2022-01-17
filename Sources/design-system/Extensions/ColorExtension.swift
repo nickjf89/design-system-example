@@ -6,6 +6,7 @@
 //
 
 import UIKit
+import SwiftUI
 
 public extension UIColor {
   static func withDesignId(_ identifier: TPColor.Identifier) -> UIColor? {
@@ -14,6 +15,21 @@ public extension UIColor {
 
   static func withDesignId(_ identifier: TPColor.Identifier, withOverride override: UIColor) -> UIColor {
     return DesignSystem.shared.color(withIdentifier: identifier) ?? override
+  }
+}
+
+public extension Color {
+  static func withDesignId(_ identifier: TPColor.Identifier) -> Color? {
+    guard let uiColor = UIColor.withDesignId(identifier) else { return nil }
+    return Color(uiColor: uiColor)
+  }
+
+  static func withDesignId(_ identifier: TPColor.Identifier, withOverride override: Color) -> Color {
+    if let uiColor = UIColor.withDesignId(identifier) {
+      return Color(uiColor: uiColor)
+    } else {
+      return override
+    }
   }
 }
 
