@@ -1,38 +1,13 @@
 {
-  "colors" : [
-    {
-      "color" : {
-        "color-space" : "srgb",
-        "components" : {
-          "alpha" : "{{ light.a }}",
-          "blue" : "{{ light.b }}",
-          "green" : "{{ light.g }}",
-          "red" : "{{ light.r }}"
-        }
-      },
-      "idiom" : "universal"
-    },
-    {
-      "appearances" : [
-        {
-          "appearance" : "luminosity",
-          "value" : "dark"
-        }
-      ],
-      "color" : {
-        "color-space" : "srgb",
-        "components" : {
-          "alpha" : "{{ dark.a }}",
-          "blue" : "{{ dark.b }}",
-          "green" : "{{ dark.g }}",
-          "red" : "{{ dark.r }}"
-        }
-      },
-      "idiom" : "universal"
-    }
-  ],
-  "info" : {
-    "author" : "xcode",
-    "version" : 1
-  }
+  "colors": [
+      {
+          "identifier": "brand",
+          "components": {
+              "red": 100,
+              "green": 100,
+              "blue": 50,
+              "alpha": 1
+          }
+      }
+  ]
 }
