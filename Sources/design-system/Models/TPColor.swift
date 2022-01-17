@@ -8,10 +8,6 @@
 import UIKit
 
 public struct TPColor: Codable, DesignSystemIdentifiable {
-  public enum Identifier: String {
-    case brand
-  }
-
   public enum Theme: String, Codable {
     case light, dark
   }
@@ -27,4 +23,10 @@ public struct TPColor: Codable, DesignSystemIdentifiable {
   let components: Components?
   let hex: String?
   let theme: Theme?
+}
+
+public extension TPColor {
+  public enum Identifier: String {
+    case brand
+  }
 }

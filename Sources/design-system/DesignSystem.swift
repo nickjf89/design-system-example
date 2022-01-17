@@ -7,6 +7,11 @@
 
 import UIKit
 
+public protocol DesignSystemIdentifiable {
+  var identifier: String { get }
+}
+
+
 public final class DesignSystem {
   public static let shared = DesignSystem(model: Bundle.main.makeDesignSystemModelFromFile())
 
