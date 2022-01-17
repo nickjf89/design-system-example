@@ -26,7 +26,7 @@ public struct TPColor: Codable, DesignSystemIdentifiable {
 }
 
 public extension TPColor {
-  public enum Identifier: String {
+  enum Identifier: String {
     case brand
   }
 }
