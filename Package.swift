@@ -23,7 +23,9 @@ let package = Package(
         // Targets can depend on other targets in this package, and on products in packages this package depends on.
         .target(
             name: "design-system",
-            dependencies: []),
+            resources: [
+              .process("Resources/designsystem.json")
+            ]),
         .testTarget(
             name: "design-systemTests",
             dependencies: ["design-system"]),
